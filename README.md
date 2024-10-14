@@ -1,4 +1,7 @@
 # data-512-homework_2
+## Goal
+
+The goal of this project is to explore wikipedia articles for politicians across different countries. We're looking both at the raw number of articles and their quality using the ORES classifier to assign a predicted rating. 
 
 ## License
 The license to the source data is the Wikimedia Foundation Terms of Use: https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use The ToU is applicable to this project since we are using a free and open license and the results cause no harm to anyone.
