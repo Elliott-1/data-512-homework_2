@@ -3,12 +3,21 @@
 
 The goal of this project is to explore wikipedia articles for politicians across different countries. We're looking both at the raw number of articles and their quality using the ORES classifier to assign a predicted rating. 
 
-## License
+## License and Data sourcing
 The license to the source data is the Wikimedia Foundation Terms of Use: https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use The ToU is applicable to this project since we are using a free and open license and the results cause no harm to anyone.
 
 The API documentation is linked here: https://doc.wikimedia.org/generated-data-platform/aqs/analytics-api/reference/page-views.html
 
 I also used sample code from Dr. David McDonald which is licensed through CC-BY, linked here: https://creativecommons.org/licenses/by/4.0/
+
+Article quality predictions were sourced through the ORES API, documentation linked here: https://www.mediawiki.org/wiki/ORES
+
+The list of article titles was crawled from this Wikipedia page - Politicians by nationality: https://en.wikipedia.org/wiki/Category:Politicians_by_nationality . 
+The results are provided in: data/politicians_by_country_AUG.2024.csv
+
+Population data came from the Population Reference Bureau: https://www.prb.org/international/indicator/population/table/
+The results are provided in: data/population_by_country_AUG.2024.csv
+
 ## Data produced
 My notebook creates two intermediate files:
 1. results/politician_revid.csv - This CSV contains a list of politicians and their last revision ID for their Wikipedia page
